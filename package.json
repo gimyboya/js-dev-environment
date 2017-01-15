@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "JavaScript development environment",
   "scripts": {
-      "prestart": "node buildScripts/startMessage.js",
-      "start": "npm-run-all --parallel security-check open:src",
-      "open:src": "node buildScripts/srcServer.js",
-      "security-check": "nsp check"
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "babel-node buildScripts/srcServer.js",
+    "security-check": "nsp check"
   },
-  "author": "gimy boya",
+  "author": "gimyboya",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-cli": "6.16.0",
+    "babel-cli": "^6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
     "babel-preset-latest": "6.16.0",
