@@ -5,6 +5,7 @@
   "scripts": {
       "prestart": "node buildScripts/startMessage.js",
       "start": "node buildScripts/srcServer.js",
+      "security-check": "nsp check"
   },
   "author": "gimy boya",
   "license": "MIT",
