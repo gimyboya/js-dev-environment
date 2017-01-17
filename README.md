@@ -13,7 +13,8 @@ good editors for JavaScript due to many reasons are: webstorm vscode
 ## Develeopement
 
 - [x] package.jason
-- [x] express as a server (we may change to browser sync)
+- [x] express as a server
+- [x] Browser sync for hot reloading
 - [x] sharing tool (not installed yet)
 
 ## Transpiling
@@ -22,3 +23,8 @@ good editors for JavaScript due to many reasons are: webstorm vscode
 - [x] .babelrc (this file configure babel)
 
 ## Bundling
+jspm
+##Linting
+
+- [x] eslintrc.json (configuration)
+- [x] lint:watch (npm script to enable watching feature)

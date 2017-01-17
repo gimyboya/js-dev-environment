@@ -4,10 +4,12 @@
   "description": "JavaScript development environment",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check open:src",
-    "open:src": "babel-node buildScripts/srcServer.js",
-    "security-check": "nsp check"
-    "lint": "esw src buildScript"
+    "start": "npm-run-all --parallel security-check open:src lint:watch",
+    "open:src": "babel-node buildScripts/srcServer.js & browser-sync start --proxy 'localhost:3000' --files 'src' --no-ui --port 3001",
+    "security-check": "nsp check",
+    "lint": "esw src buildScripts --color",
+    "lint:watch": "npm run lint -- --watch",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
   },
   "author": "gimyboya",
   "license": "MIT",

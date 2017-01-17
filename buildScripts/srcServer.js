@@ -5,6 +5,7 @@ import open  from 'open';
 const port = 3000;
 const app = express();
 
+/*eslint-disable no-console */
 
 app.get('/', function(request, response){
 response.sendFile(path.join(__dirname, '../src/index.html'));
