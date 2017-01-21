@@ -4,9 +4,7 @@
   "description": "trying to build my own js environment",
   "main": "index.js",
   "dependencies": {
-    "babel-cli": "^6.18.0",
-    "express": "^4.14.0",
-    "webpack": "^1.14.0"
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -15,11 +13,12 @@
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-react": "^6.9.0",
+    "webpack": "^2.2.0"
   },
   "scripts": {
     "test": "mocha",
-    "start": "",
+    "start": "node app.js",
     "lint": "./node_modules/.bin/eslint app.js public/*/*.js",
     "lint:fix": "./node_modules/.bin/eslint --fix app.js public/*/*.js"
   },
