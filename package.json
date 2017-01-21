@@ -1,0 +1,31 @@
+{
+  "name": "js-dev-environment",
+  "version": "0.1.0",
+  "description": "trying to build my own js environment",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimyboya/js-dev-environment.git"
+  },
+  "keywords": [
+    "js",
+    "automation",
+    "npm",
+    "scripts",
+    "environment"
+  ],
+  "author": "gimyboya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gimyboya/js-dev-environment/issues"
+  },
+  "homepage": "https://github.com/gimyboya/js-dev-environment#readme"
+}
