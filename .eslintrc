@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jquery": true,
+    "mocha": false,
+    "mongo": false
+  },
+  "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "impliedStrict": true,
+          "jsx": true
+        }
+  },
+  "extends": "airbnb"
+
+}

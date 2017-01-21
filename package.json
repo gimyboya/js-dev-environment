@@ -5,13 +5,23 @@
   "main": "index.js",
   "dependencies": {
     "babel-cli": "^6.18.0",
+    "express": "^4.14.0",
     "webpack": "^1.14.0"
   },
   "devDependencies": {
-    "eslint": "^3.14.0"
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "",
+    "lint": "./node_modules/.bin/eslint app.js public/*/*.js",
+    "lint:fix": "./node_modules/.bin/eslint --fix app.js public/*/*.js"
   },
   "repository": {
     "type": "git",
