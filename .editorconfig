@@ -1,0 +1,24 @@
+# EditorConfig is awesome: http://EditorConfig.org 
+ 
+#[*.{js,py}] [lib/**.js] [{package.json,.travis.yml}] 
+# top-most EditorConfig file 
+root = true 
+ 
+[*] 
+indent_style = space 
+indent_size = 2 
+trim_trailing_whitespace = true 
+spaces_around_operators = true 
+spaces_around_brackets = both 
+charset = utf-8 
+end_of_line = lf 
+insert_final_newline = false
+spaces_around_operators = true 
+indent_brace_style = K&R
+ 
+# for [*.js] js-best-practices 
+# to set quote_type, curly_bracket_next_line, indent_brace_style
+
+[*.js] 
+quote_type = single 
+curly_bracket_next_line = true
