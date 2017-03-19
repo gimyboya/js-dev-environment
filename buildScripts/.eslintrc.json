@@ -1,0 +1,6 @@
+{
+  "rules": {
+    // disallow use of console
+    "no-console": "off"
+  }
+}

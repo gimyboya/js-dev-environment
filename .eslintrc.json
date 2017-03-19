@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jquery": true,
+    "mocha": false,
+    "mongo": false
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    // require trailing commas in multiline object literals
+    "comma-dangle": ["warn",
+      {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "always-multiline"
+      }
+    ],
+    // to force 'use strict'
+    "strict": [ "error", "safe" ],
+    // enforce newline at the end of file, with no multiple empty lines
+    "eol-last": [ "warn", "always" ],
+    // disallow mixed 'LF' and 'CRLF' as linebreaks
+    // http://eslint.org/docs/rules/linebreak-style
+    "linebreak-style": [ "warn", "unix" ],
+    // Forbid the use of extraneous packages
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    // paths are treated both as absolute paths, and relative to process.cwd()
+    "import/no-extraneous-dependencies": "off"
+  }
+}

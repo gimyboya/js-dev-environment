@@ -5,22 +5,22 @@ import webpack from 'webpack';
 import webpackConfigDev from '../webpack.config.dev';
 
 const port = 3000;
-let app = express();
-let bundler = webpack(webpackConfigDev);
+const app = express();
+const bundler = webpack(webpackConfigDev);
 
 app.use(require('webpack-dev-middleware')(bundler, {
-    publicPath: webpackConfigDev.output.publicPath
+  publicPath: webpackConfigDev.output.publicPath,
 }));
 
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, '../src/index.html'));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
-app.listen(port, function(err){
-    if(err){
-        console.log(err);
-    }else{
-        open('http://localhost:' + port);
-    }
+app.listen(port, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    open(`http://localhost:${port}`);
+  }
 });
 

@@ -5,19 +5,19 @@ export default {
   devtool: 'inline-source-map',
   noInfo: true,
   entry: [
-    path.resolve(__dirname, 'src/index')
+    path.resolve(__dirname, 'src/index'),
   ],
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'src'),
     publicPath: '/',
-    filename: 'bundled.js'
+    filename: 'bundled.js',
   },
   plugins: [],
   module: {
     loaders: [
       { test: /\.js$/, exclude: /node_modules /, loaders: ['babel'] },
-      {test: /\.css$/, loaders: ['style', 'css']}
-    ]
-  }
-}
+      { test: /\.css$/, loaders: ['style', 'css'] },
+    ],
+  },
+};
