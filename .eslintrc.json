@@ -40,6 +40,6 @@
     // paths are treated both as absolute paths, and relative to process.cwd()
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "warn"
   }
 }
